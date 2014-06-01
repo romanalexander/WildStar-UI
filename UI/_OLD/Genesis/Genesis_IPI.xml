@@ -1,0 +1,788 @@
+<?xml version="1.0" ?>
+<interfaces>
+  <ipi id="LeftSideBar" frame="SideBar">
+    <output name="OnActionButtonPressed[]" />
+    <output name="OnActionButtonToggled[]" />
+
+    <input name="ActivateActionButton[]" />
+    <input name="SetActionButtonText[]" />
+    <input name="UncheckActionButton[]" />
+
+
+    <!-- From the TransformsForm -->
+    <output name="OnSelectScaleToggle" />
+    <output name="OnSelectRotateToggle" />
+    <output name="OnSelectTranslateToggle" />
+
+    <output name="OnTranslateXToggle" />
+    <output name="OnTranslateYToggle" />
+    <output name="OnTranslateZToggle" />
+    <output name="OnTranslateUnlockAll" />
+
+    <output name="OnScaleXToggle" />
+    <output name="OnScaleYToggle" />
+    <output name="OnScaleZToggle" />
+    <output name="OnScaleUnlockAll" />
+
+    <output name="OnRotateXToggle" />
+    <output name="OnRotateYToggle" />
+    <output name="OnRotateZToggle" />
+    <output name="OnRotateUnlockAll" />
+
+    <input name="SetTransformTranslateX" />
+    <input name="SetTransformTranslateY" />
+    <input name="SetTransformTranslateZ" />
+    <input name="SetTransformRotateX" />
+    <input name="SetTransformRotateY" />
+    <input name="SetTransformRotateZ" />
+    <input name="SetTransformScaleX" />
+    <input name="SetTransformScaleY" />
+    <input name="SetTransformScaleZ" />
+
+    <output name="OnChangeTransformTranslateX" />
+    <output name="OnChangeTransformTranslateY" />
+    <output name="OnChangeTransformTranslateZ" />
+    <output name="OnChangeTransformRotateX" />
+    <output name="OnChangeTransformRotateY" />
+    <output name="OnChangeTransformRotateZ" />
+    <output name="OnChangeTransformScaleX" />
+    <output name="OnChangeTransformScaleY" />
+    <output name="OnChangeTransformScaleZ" />
+  </ipi>
+
+  <ipi id="RightSideBar" frame="SideBar">
+    <!-- BEGIN I/O from the PropertiesFrame -->
+    <output name="OnSetEditTerrain" />
+    <output name="OnSetEditProps" />
+    <input name="SetEditTerrain" />
+    <input name="SetEditProps" />
+    <!-- END I/O from the PropertiesFrame -->
+
+    <!-- BEGIN I/O from the Source Control Panel -->
+    <input name="SourceControl_SetEntryCount" />
+
+    <input name="SourceControl_SetFilename[]" />
+    <input name="SourceControl_SetUser[]" />
+    <input name="SourceControl_EnableCheckins[]" />
+    <input name="SourceControl_DisableCheckins[]" />
+
+    <output name="SourceControl_OnCheckin[]" />
+    <output name="SourceControl_OnUndoCheckout[]" />
+
+    <output name="SourceControl_OnCheckinAll" />
+    <output name="SourceControl_OnUndoAllCheckouts" />
+    <!-- END I/O from the Source Control Panel -->
+
+    <!-- Prop Picker Panel -->
+    <input name="PropPicker_SetProp" />
+    <input name="PropPicker_SetDesc" />
+    <output name="PropPicker_OnPropSelect" />
+
+    <!-- Spawn Picker Panel -->
+    <input name="SpawnPicker_Clear" />
+    <input name="SpawnPicker_AddSpawn" />
+    <output name="SpawnPicker_OnSpawnSelect" />
+
+    <!-- Generic brush options: size, falloff, power, circle, rect, scatter -->
+    <input name="SetBrushSize" />
+    <input name="SetBrushSizeMin" />
+    <input name="SetBrushSizeMax" />
+    <input name="SetBrushFalloff" />
+    <input name="SetBrushPower" />
+    <input name="SetBrushPowerMin" />
+    <input name="SetBrushPowerMax" />
+
+    <input name="SetBrushShapeCircle"  />
+    <input name="SetBrushShapeRectangle" />
+    <input name="SetBrushShapeScatter" />
+    <input name="SetBrushShapeChunk" />
+
+    <input name="SetSelectionRestrict" />
+    <input name="UnsetSelectionRestrict" />
+    <output name="OnToggleSelectionRestrict" />
+    <output name="OnSetSelectionClear" />
+    <output name="OnSetSelectionAffectAll" />
+    <output name="OnUnsetSelectionAffectAll" />
+
+    <output name="OnSetBrushSize" />
+    <output name="OnSetBrushFalloff" />
+    <output name="OnSetBrushPower" />
+
+    <output name="OnSetBrushShapeCircle" />
+    <output name="OnSetBrushShapeRectangle" />
+    <output name="OnSetBrushShapeScatter" />
+    <output name="OnSetBrushShapeChunk" />
+    <output name="OnSetBrushShapeSelection" />
+
+    <!-- Selection brush options: add, smooth, plateau -->
+    <input name="SetSelectionModeAdd" />
+    <input name="SetSelectionModeSmooth" />
+    <input name="SetSelectionModeSet" />
+
+    <output name="OnSetSelectionModeAdd" />
+    <output name="OnSetSelectionModeSet" />
+    <output name="OnSetSelectionModeSmooth" />
+    <!-- Height brush options: add, smooth, plateau -->
+    <input name="SetBrushModeAdditive" />
+    <input name="SetBrushModeSmooth" />
+    <input name="SetBrushModePlateau" />
+
+    <output name="OnSetBrushModeAdditive" />
+    <output name="OnSetBrushModeSmooth" />
+    <output name="OnSetBrushModePlateau" />
+
+    <!-- Texture brush options: texture 0,1,2,3 -->
+    <input name="SetTexture0" />
+    <input name="SetTexture1" />
+    <input name="SetTexture2" />
+    <input name="SetTexture3" />
+    <input name="SetAutoTexture" />
+    <input name="SetTextureAdd" />
+    <input name="SetTextureSet" />
+
+    <output name="OnSetTexture0" />
+    <output name="OnSetTexture1" />
+    <output name="OnSetTexture2" />
+    <output name="OnSetTexture3" />
+    <output name="OnSetAutoTexture" />
+    <output name="OnSetTextureSet" />
+    <output name="OnSetTextureAdd" />
+
+    <!-- Layer Palette options -->
+    <input name="SetIcon0_FileName" />
+    <input name="SetIcon1_FileName" />
+    <input name="SetIcon2_FileName" />
+    <input name="SetIcon3_FileName" />
+    <input name="SetIcon4_FileName" />
+    <input name="SetIcon5_FileName" />
+    <input name="SetIcon6_FileName" />
+    <input name="SetIcon7_FileName" />
+    <input name="SetIcon8_FileName" />
+
+    <input name="SetIcon0_Selected" />
+    <input name="SetIcon1_Selected" />
+    <input name="SetIcon2_Selected" />
+    <input name="SetIcon3_Selected" />
+    <input name="SetIcon4_Selected" />
+    <input name="SetIcon5_Selected" />
+    <input name="SetIcon6_Selected" />
+    <input name="SetIcon7_Selected" />
+    <input name="SetIcon8_Selected" />
+    <input name="SetAutoTexture_Selected" />
+
+    <output name="OnIcon0_Select" />
+    <output name="OnIcon1_Select" />
+    <output name="OnIcon2_Select" />
+    <output name="OnIcon3_Select" />
+    <output name="OnIcon4_Select" />
+    <output name="OnIcon5_Select" />
+    <output name="OnIcon6_Select" />
+    <output name="OnIcon7_Select" />
+    <output name="OnIcon8_Select" />
+
+    <output name="OnAutoTexture" />
+    <output name="OnEdit_Enable" />
+    <output name="OnEdit_Disable" />
+  </ipi>
+  <ipi id="PropertiesForm" frame="Frame">
+    <output name="OnSetEditTerrain" />
+    <output name="OnSetEditProps" />
+
+    <input name="SetEditTerrain" />
+    <input name="SetEditProps" />
+  </ipi>
+  <ipi id="TransformsForm" frame="Frame">
+    <input name="SetTransformTranslateX" />
+    <input name="SetTransformTranslateY" />
+    <input name="SetTransformTranslateZ" />
+    <input name="SetTransformRotateX" />
+    <input name="SetTransformRotateY" />
+    <input name="SetTransformRotateZ" />
+    <input name="SetTransformScaleX" />
+    <input name="SetTransformScaleY" />
+    <input name="SetTransformScaleZ" />
+
+    <output name="OnChangeTransformTranslateX" />
+    <output name="OnChangeTransformTranslateY" />
+    <output name="OnChangeTransformTranslateZ" />
+    <output name="OnChangeTransformRotateX" />
+    <output name="OnChangeTransformRotateY" />
+    <output name="OnChangeTransformRotateZ" />
+    <output name="OnChangeTransformScaleX" />
+    <output name="OnChangeTransformScaleY" />
+    <output name="OnChangeTransformScaleZ" />
+
+    <output name="OnSelectScaleToggle" />
+    <output name="OnSelectRotateToggle" />
+    <output name="OnSelectTranslateToggle" />
+
+    <output name="OnTranslateXToggle" />
+    <output name="OnTranslateYToggle" />
+    <output name="OnTranslateZToggle" />
+    <output name="OnTranslateUnlockAll" />
+
+    <output name="OnScaleXToggle" />
+    <output name="OnScaleYToggle" />
+    <output name="OnScaleZToggle" />
+    <output name="OnScaleUnlockAll" />
+
+    <output name="OnRotateXToggle" />
+    <output name="OnRotateYToggle" />
+    <output name="OnRotateZToggle" />
+    <output name="OnRotateUnlockAll" />
+  </ipi>
+  <ipi id="SnappingForm" frame="Frame">
+  </ipi>
+  <ipi id="ActionPanel" frame="Frame">
+    <output name="OnActionButtonPressed[]" />
+    <output name="OnActionButtonToggled[]" />
+
+    <input name="ActivateActionButton[]" />
+    <input name="SetActionButtonText[]" />
+    <input name="UncheckActionButton[]" />
+  </ipi>
+  <ipi id="ActionPanelEntry" frame="Frame">
+    <output name="OnButtonPress" />
+    <output name="OnButtonToggle" />
+
+    <input name="ActivateButton" />
+    <input name="SetActionButtonText" />
+    <input name="ClearActionButton" />
+  </ipi>
+  <ipi id="InfoBar" frame="SideBar">
+    <input name="SetLeftText" />
+    <input name="SetMiddleText" />
+    <input name="SetRightText" />
+    <input name="SetMousePositionText" />
+
+    <input name="UndoInfo_Show" />
+    <input name="UndoInfo_Hide" />
+    <input name="SetMemUsage" />
+    <input name="SetUndoMemUsage" />
+    <input name="SetRedoMemUsage" />
+    <input name="SetUndoCount" />
+    <input name="SetRedoCount" />
+
+    <input name="TerrainInfo_Show" />
+    <input name="TerrainInfo_Hide" />
+    <input name="SetPositionText" />
+    <input name="SetLayerInfoText" />
+    <input name="SetSelectionMaskText" />
+  </ipi>
+  <ipi id="InfoBarMouse" frame="Frame">
+    <input name="SetLeftText" />
+    <input name="SetMiddleText" />
+    <input name="SetRightText" />
+    <input name="SetMousePositionText" />
+  </ipi>
+  <ipi id="InfoBarUndo" frame="Frame">
+    <input name="UndoInfo_Show" />
+    <input name="UndoInfo_Hide" />
+    <input name="SetMemUsage" />
+    <input name="SetUndoMemUsage" />
+    <input name="SetRedoMemUsage" />
+    <input name="SetUndoCount" />
+    <input name="SetRedoCount" />
+  </ipi>
+  <ipi id="InfoBarTerrain" frame="Frame">
+  <input name="TerrainInfo_Show" />
+  <input name="TerrainInfo_Hide" />
+  <input name="SetPositionText" />
+  <input name="SetLayerInfoText" />
+  <input name="SetSelectionMaskText" />
+  </ipi>
+
+  <ipi id="BrushDialog" frame="Frame">
+    <input name="SetBrushSize" />
+    <input name="SetBrushSizeMin" />
+    <input name="SetBrushSizeMax" />
+    <input name="SetBrushFalloff" />
+    <input name="SetBrushPower" />
+    <input name="SetBrushPowerMin" />
+    <input name="SetBrushPowerMax" />
+
+    <input name="SetBrushShapeCircle"  />
+    <input name="SetBrushShapeRectangle" />
+    <input name="SetBrushShapeScatter" />
+    <input name="SetBrushShapeChunk" />
+    <input name="SetBrushShapeSelection" />
+
+    <output name="OnSetBrushSize" />
+    <output name="OnSetBrushFalloff" />
+    <output name="OnSetBrushPower" />
+
+    <output name="OnSetBrushShapeCircle" />
+    <output name="OnSetBrushShapeRectangle" />
+    <output name="OnSetBrushShapeScatter" />
+    <output name="OnSetBrushShapeChunk" />
+    <output name="OnSetBrushShapeSelection" />
+  </ipi>
+  <ipi id="HeightDialog" frame="Frame">
+    <input name="SetBrushModeAdditive" />
+    <input name="SetBrushModePlateau" />
+    <input name="SetBrushModeSmooth" />
+
+    <output name="OnSetBrushModeAdditive" />
+    <output name="OnSetBrushModePlateau" />
+    <output name="OnSetBrushModeSmooth" />
+  </ipi>
+  <ipi id="SelectionBrush" frame="Frame">
+    <input name="SetSelectionModeAdd" />
+    <input name="SetSelectionModeSet" />
+    <input name="SetSelectionModeSmooth" />
+
+    <output name="OnSetSelectionModeAdd" />
+    <output name="OnSetSelectionModeSet" />
+    <output name="OnSetSelectionModeSmooth" />
+  </ipi>
+  <ipi id="SelectionDialog" frame="Frame">
+    <input name="SetSelectionRestrict" />
+    <input name="UnsetSelectionRestrict" />
+    <input name="SetSelectionAffectAll" />
+
+    <output name="OnSetSelectionClear" />
+    <output name="OnToggleSelectionRestrict" />
+    <output name="OnSetSelectionAffectAll" />
+    <output name="OnUnsetSelectionAffectAll" />
+  </ipi>
+  <ipi id="TextureDialog" frame="Frame">
+    <input name="SetTexture0" />
+    <input name="SetTexture1" />
+    <input name="SetTexture2" />
+    <input name="SetTexture3" />
+    <input name="SetAutoTexture" />
+    <input name="SetTextureSet" />
+    <input name="SetTextureAdd" />
+
+    <output name="OnSetTexture0" />
+    <output name="OnSetTexture1" />
+    <output name="OnSetTexture2" />
+    <output name="OnSetTexture3" />
+
+    <output name="OnSetAutoTexture" />
+    <output name="OnSetTextureSet" />
+    <output name="OnSetTextureAdd" />
+  </ipi>
+  <!-- Source Control Panel -->
+  <ipi id="SourceControlPanel" frame="Frame">
+    <input name="SourceControl_SetEntryCount" />
+    
+    <input name="SourceControl_SetFilename[]" />
+    <input name="SourceControl_SetUser[]" />
+    <input name="SourceControl_EnableCheckins[]" />
+    <input name="SourceControl_DisableCheckins[]" />
+
+    <output name="SourceControl_OnCheckin[]" />
+    <output name="SourceControl_OnUndoCheckout[]" />
+
+    <output name="SourceControl_OnCheckinAll" />
+    <output name="SourceControl_OnUndoAllCheckouts" />
+  </ipi>
+  <!-- Source Control Panel Entry -->
+  <ipi id="SourceControlPanelEntry" frame="Frame">
+    <input name="SetFilename" />
+    <input name="SetUser" />
+    <input name="EnableCheckins" />
+    <input name="DisableCheckins" />
+
+    <output name="OnCheckin" />
+    <output name="OnUndoCheckout" />
+  </ipi>
+  <!-- Prop Picker Panel -->
+  <ipi id="PropPickerFrame" frame="Frame">
+    <input name="PropPicker_SetProp" />
+    <input name="PropPicker_SetDesc" />
+    <output name="PropPicker_OnPropSelect" />
+  </ipi>
+  <!-- Spawn Picker Panel -->
+  <ipi id="SpawnPickerFrame" frame="Frame">
+    <input name="SpawnPicker_Clear" />
+    <input name="SpawnPicker_AddSpawn" />
+    <output name="SpawnPicker_OnSpawnSelect" />
+  </ipi>
+  <!-- File Open Dialog -->
+  <ipi id="FileOpenDialog" frame="Frame">
+    <input name="FileOpenDialog_SetEntryCount" />
+    <input name="FileOpenDialog_SetName[]" />
+    
+    <output name="FileOpenDialog_OnSelect[]" />
+    <output name="FileOpenDialog_OnGetLatestToggle" />
+    <output name="FileOpenDialog_OnOkay" />
+    <output name="FileOpenDialog_OnCancel" />
+  </ipi>
+  <!-- File Open List Entry -->
+  <ipi id="FileOpenListEntry" frame="Frame">
+    <input name="SetName" />
+    <output name="OnSelect" />
+  </ipi>
+  <!-- Texture Picker -->
+  <ipi id="TexturePicker" frame="Frame">
+    <input name="SetThumbnail_Columns" />
+    <input name="SetThumbnail_Rows" />
+    <input name="SetThumbnail_Info" />
+    <input name="SetThumbnail_Image[]" />
+    <output name="OnThumbnail_Select[]" />
+    <output name="OnKeyword_Change" />
+    <output name="OnRefresh" />
+
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+  </ipi>
+  <ipi id="TexturePickerElement" frame="Frame">
+    <input name="SetThumbnail_Image" />
+    <output name="OnThumbnail_Select" />
+  </ipi>
+  <!-- Import Terrain Dialog -->
+  <ipi id="ImportTerrainDialog" frame="Frame">
+    <output name="OnImport" />
+    <output name="OnCancel" />
+    <output name="OnSelectionMaskSet" />
+    <output name="OnSelectionMaskUnset" />
+    <output name="OnAverageCornerHeights" />
+    <output name="OnAdditive" />
+    <output name="OnBlackChange" />
+    <output name="OnWhiteChange" />
+    <output name="OnFilenameChange" />
+    <output name="OnBrowse" />
+
+    <input name="SetFilename" />
+    <input name="SetBlack" />
+    <input name="SetWhite" />
+    <input name="SetAverageCornerHeights" />
+    <input name="SetAdditive" />
+    <input name="SetSelectionMask" />
+    <input name="UnsetSelectionMask" />
+  </ipi>
+  <!-- Prop Picker -->
+  <ipi id="PropPicker" frame="Frame">
+    <input name="SetProp_Rows" />
+    <input name="SetProp_Name[]" />
+    
+    <output name="OnProp_Select[]" />
+    
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+    
+    <output name="OnKeyword_Change" />
+    <output name="OnRefresh" />
+  </ipi>
+  <ipi id="PropPickerElement" frame="Frame">
+    <input name="SetProp_Name" />
+    <output name="OnProp_Select" />
+  </ipi>
+  <!-- Sound Picker -->
+  <ipi id="SoundPicker" frame="Frame">
+    <input name="SetSound_Rows" />
+    <input name="SetSound_Name[]" />
+    <input name="SetSound_Info" />
+    <input name="SetSound_PreviewUnchecked" />
+    <input name="SetSound_Selected[]" />
+    <output name="OnSound_Select[]" />
+    
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+    
+    <output name="OnKeyword_Change" />
+    <output name="OnRefresh" />
+    <output name="OnPreviewStart" />
+    <output name="OnPreviewStop" />
+  </ipi>
+  <ipi id="SoundPickerElement" frame="Frame">
+    <input name="SetSound_Name" />
+    <output name="OnSound_Select" />
+  </ipi>
+  <!-- Sound Container List -->
+  <ipi id="SoundContainerList" frame="Frame">
+    <input name="SetContainer_Rows" />
+    <input name="SetContainer_Text[]" />
+
+    <output name="OnContainer_DoubleClick[]" />
+
+    <output name="OnKeyword_Change" />
+    <output name="OnQuit" />
+    <output name="OnRefresh" />
+  </ipi>
+  <ipi id="SoundContainerListElement" frame="Frame">
+    <input name="SetContainerText" />
+    <output name="OnContainerDoubleClick" />
+  </ipi>
+  <!-- Sound Container Editor -->
+  <ipi id="SoundContainerEditor" frame="Frame">
+    <input name="SetID" />
+    <input name="SetDescription" />
+    <input name="SetSoundName_0" />
+    <input name="SetSoundName_1" />
+    <input name="SetSoundName_2" />
+    <input name="SetSoundName_3" />
+    <input name="SetSoundName_4" />
+    <input name="SetSoundName_5" />
+    <input name="SetLoop_PlayOneSound" />
+    <input name="SetLoop_PlayNSounds" />
+    <input name="SetLoop_PlayNSounds_Count" />
+    <input name="SetLoop_LoopForever" />
+    <input name="SetDelay_NoDelay" />
+    <input name="SetDelay_DelayN" />
+    <input name="SetDelay_DelayN_Min_Count" />
+    <input name="SetDelay_DelayN_Max_Count" />
+    <input name="SetDelay_DelayBeforeFirst_Set" />
+    <input name="SetDelay_DelayBeforeFirst_Unset" />
+    <input name="SetRandom" />
+    <input name="SetRandom_CompletelyRandom" />
+    <input name="SetRandom_Shuffle" />
+    <input name="SetRandom_DoNotRepeatLastN" />
+    <input name="SetRandom_DoNotRepeatLastN_Count" />
+    <input name="SetSequence" />
+    <input name="SetSequence_Start_StartAtBeginning" />
+    <input name="SetSequence_Start_RandomStart" />
+    <input name="SetSequence_End_LoopToTheStart" />
+    <input name="SetSequence_End_Reverse" />
+    <input name="SetSequence_End_Stop" />
+    <input name="SetPlayChance" />
+    <input name="SetPreview_Start" />
+    <input name="SetPreview_Stop" />
+    <input name="SetVolume" />
+
+    <output name="OnSave" />
+    <output name="OnClose" />
+    <output name="OnDescriptionChange" />
+    <output name="OnSelectSound_0" />
+    <output name="OnDeleteSound_0" />
+    <output name="OnEditSound_0" />
+    <output name="OnSelectSound_1" />
+    <output name="OnDeleteSound_1" />
+    <output name="OnEditSound_1" />
+    <output name="OnSelectSound_2" />
+    <output name="OnDeleteSound_2" />
+    <output name="OnEditSound_2" />
+    <output name="OnSelectSound_3" />
+    <output name="OnDeleteSound_3" />
+    <output name="OnEditSound_3" />
+    <output name="OnSelectSound_4" />
+    <output name="OnDeleteSound_4" />
+    <output name="OnEditSound_4" />
+    <output name="OnSelectSound_5" />
+    <output name="OnDeleteSound_5" />
+    <output name="OnEditSound_5" />
+
+    <output name="OnPlaySound_0" />
+    <output name="OnStopSound_0" />
+    <input name="SetStopSound_0" />
+    <output name="OnPlaySound_1" />
+    <output name="OnStopSound_1" />
+    <input name="SetStopSound_1" />
+    <output name="OnPlaySound_2" />
+    <output name="OnStopSound_2" />
+    <input name="SetStopSound_2" />
+    <output name="OnPlaySound_3" />
+    <output name="OnStopSound_3" />
+    <input name="SetStopSound_3" />
+    <output name="OnPlaySound_4" />
+    <output name="OnStopSound_4" />
+    <input name="SetStopSound_4" />
+    <output name="OnPlaySound_5" />
+    <output name="OnStopSound_5" />
+    <input name="SetStopSound_5" />
+
+
+    <output name="OnLoop_PlayOneSound" />
+    <output name="OnLoop_PlayNSounds" />
+    <output name="OnLoop_PlayNSounds_CountChange" />
+    <output name="OnLoop_LoopForever" />
+    <output name="OnDelay_NoDelay" />
+    <output name="OnDelay_DelayN" />
+    <output name="OnDelay_DelayN_Min_CountChange" />
+    <output name="OnDelay_DelayN_Max_CountChange" />
+    <output name="OnDelay_DelayBeforeFirst_Set" />
+    <output name="OnDelay_DelayBeforeFirst_Unset" />
+    <output name="OnRandom" />
+    <output name="OnRandom_CompletlyRandom" />
+    <output name="OnRandom_Shuffle" />
+    <output name="OnRandom_DoNotRepeatLastN" />
+    <output name="OnRandom_DoNotRepeatLastN_Count" />
+    <output name="OnSequence" />
+    <output name="OnSequence_Start_StartAtBeginning" />
+    <output name="OnSequence_Start_RandomStart" />
+    <output name="OnSequence_End_LoopToTheStart" />
+    <output name="OnSequence_End_Reverse" />
+    <output name="OnSequence_End_Stop" />
+    <output name="OnPlayChanceChange" />
+    <output name="OnPreview_Start" />
+    <output name="OnPreview_Stop" />
+    <output name="OnVolumeChange" />
+  </ipi>
+  <!-- Sound Editor -->
+  <ipi id="SoundEditor" frame="Frame">
+    <input name="SetID" />
+    <input name="SetEnumName" />
+
+    <input name="Type_Clear" />
+    <input name="Type_AddItem" />
+    <input name="Type_SelectItem" />
+
+    <input name="SetAssetID_Name" />
+    <input name="SetVolumeMin" />
+    <input name="SetVolumeMax" />
+    <input name="SetPitchMin" />
+    <input name="SetPitchMax" />
+
+    <input name="Usage_Clear" />
+    <input name="Usage_AddItem" />
+    <input name="Usage_SelectItem" />
+    
+    <input name="Looping_Clear" />
+    <input name="Looping_AddItem" />
+    <input name="Looping_SelectItem" />
+
+    <input name="SetDistanceMin" />
+    <input name="SetDistanceMax" />
+
+    <input name="SetAttenuation_Log" />
+    <input name="SetAttenuation_Linear" />
+
+    <output name="OnEnumNameChange" />
+    <output name="OnType_SelectItem" />
+    <!-- asset ID -->
+    <output name="OnVolumeMinChange" />
+    <output name="OnVolumeMaxChange" />
+    <output name="OnPitchMinChange" />
+    <output name="OnPitchMaxChange" />
+    <output name="OnUsage_SelectItem" />
+    <output name="OnLooping_SelectItem" />
+    <output name="OnDistanceMinChange" />
+    <output name="OnDistanceMaxChange" />
+    <output name="OnSetAttenuation_Log" />
+    <output name="OnSetAttenuation_Linear" />
+    
+    <output name="OnSave" />
+    <output name="OnClose" />
+
+    <input name="SetPreview_Stop" />
+    <output name="OnPreview_Start" />
+    <output name="OnPreview_Stop" />
+  </ipi>
+
+  <!-- Spell Editor: Mana Cost Editor -->
+  <ipi id="ManaCostEditor" frame="Frame">
+    <output name="OnSelectManaCost" />
+    <output name="OnNew" />
+    <output name="OnSave" />
+    <output name="OnCopy" />
+    <output name="OnChangeDescription" />
+    <output name="OnChangeCostFixed0" />
+    <output name="OnChangeCostFixed1" />
+    <output name="OnChangeCostFixed2" />
+    <output name="OnChangeCostFixed3" />
+    <output name="OnChangeCostLevel0" />
+    <output name="OnChangeCostLevel1" />
+    <output name="OnChangeCostLevel2" />
+    <output name="OnChangeCostLevel3" />
+
+    <input name="ManaCostList_Clear" />
+    <input name="ManaCostList_AddItem" />
+    <input name="ManaCostList_SelectItem" />
+    
+    <input name="SetDescription" />
+    <input name="SetCostFixed0" />
+    <input name="SetCostFixed1" />
+    <input name="SetCostFixed2" />
+    <input name="SetCostFixed3" />
+    <input name="SetCostLevel0" />
+    <input name="SetCostLevel1" />
+    <input name="SetCostLevel2" />
+    <input name="SetCostLevel3" />
+  </ipi>
+  
+  <!-- Layer Editor -->
+  <ipi id="LayerEditor" frame="Frame">
+    <output name="OnPrev" />
+    <output name="OnNext" />
+   
+    <output name="OnNew" />
+    <output name="OnSave" />
+    
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+
+    <output name="OnChangeName" />
+    <output name="OnChangeHeightScale" />
+    <output name="OnChangeHeightOffset" />
+    <output name="OnChangeParallaxScale" />
+    <output name="OnChangeParallaxOffset" />
+    
+    <output name="OnPickTextureTile" />
+    <output name="OnPickProjection" />
+
+    <output name="OnPickColorMap" />
+    <output name="OnPickNormalMap" />
+    <output name="OnPickAverageColor" />
+
+    <output name="OnPickMaterialType" />
+    <output name="OnNewMaterial" />
+
+    <input name="SetID" />
+    <input name="SetName" />
+    <input name="SetHeightScale" />
+    <input name="SetHeightOffset" />
+    <input name="SetParallaxScale" />
+    <input name="SetParallaxOffset" />
+    <input name="SetTextureTile" />
+    <input name="SetProjection" />
+    <input name="SetColorMapFileName" />
+    <input name="SetNormalMapFileName" />
+    <input name="SetColorMapInfo" />
+    <input name="SetNormalMapInfo" />
+    <input name="SetAverageColor" />
+    <input name="SetMaterialType" />
+
+    <input name="DisableSave" />
+    <input name="EnableSave" />
+    <input name="DisablePrev" />
+    <input name="EnablePrev" />
+    <input name="DisableNext" />
+    <input name="EnableNext" />
+    
+    <input name="TextureTile_Clear" />
+    <input name="TextureTile_AddItem" />
+    <input name="Projection_Clear" />
+    <input name="Projection_AddItem" />
+    <input name="MaterialType_Clear" />
+    <input name="MaterialType_AddItem" />
+  </ipi>
+  <ipi id="LayerCanvas" frame="Frame">
+    <input name="SetIcon0_FileName" />
+    <input name="SetIcon1_FileName" />
+    <input name="SetIcon2_FileName" />
+    <input name="SetIcon3_FileName" />
+    <input name="SetIcon4_FileName" />
+    <input name="SetIcon5_FileName" />
+    <input name="SetIcon6_FileName" />
+    <input name="SetIcon7_FileName" />
+    <input name="SetIcon8_FileName" />
+
+    <input name="SetIcon0_Selected" />
+    <input name="SetIcon1_Selected" />
+    <input name="SetIcon2_Selected" />
+    <input name="SetIcon3_Selected" />
+    <input name="SetIcon4_Selected" />
+    <input name="SetIcon5_Selected" />
+    <input name="SetIcon6_Selected" />
+    <input name="SetIcon7_Selected" />
+    <input name="SetIcon8_Selected" />
+    <input name="SetAutoTexture_Selected" />
+    
+    <output name="OnIcon0_Select" />
+    <output name="OnIcon1_Select" />
+    <output name="OnIcon2_Select" />
+    <output name="OnIcon3_Select" />
+    <output name="OnIcon4_Select" />
+    <output name="OnIcon5_Select" />
+    <output name="OnIcon6_Select" />
+    <output name="OnIcon7_Select" />
+    <output name="OnIcon8_Select" />
+
+    <output name="OnAutoTexture" />
+    <output name="OnEdit_Enable" />
+    <output name="OnEdit_Disable" />
+    
+  </ipi>
+</interfaces>

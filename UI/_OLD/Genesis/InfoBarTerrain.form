@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="InfoBarTerrain" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="InfoBarTerrain" position.height="28" position.relative="0" position.width="495" position.x="640" position.y="540" transparent="1" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="PromptFrame" visible="1">
+    <input-redirect source="SetLayerInfoText" target="layer" targetname="SetText" />
+    <input-redirect source="SetPositionText" target="position" targetname="SetText" />
+    <input-redirect source="TerrainInfo_Hide" target="position" targetname="Hide" />
+    <input-redirect source="TerrainInfo_Hide" target="layer" targetname="Hide" />
+    <input-redirect source="TerrainInfo_Show" target="position" targetname="UnHide" />
+    <input-redirect source="TerrainInfo_Show" target="layer" targetname="UnHide" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="position" position.height="18" position.relative="0" position.width="180" position.x="5" position.y="4" Text="XXXXXX.XX, YYYYY.YY, ZZZZZ.ZZ" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="layer" position.height="18" position.relative="0" position.width="270" position.x="217" position.y="4" Text="AA: 0.00, BB: 0.00, CC: 0.00, DD: 0.00, XXXXXXXX" TextID="0" TXDName="Text" visible="1" />
+</frame>

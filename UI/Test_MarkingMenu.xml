@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Menus>
+  <!-- forms go here -->
+  <!-- form -->
+  <Menu Name="AimedShot">
+    <MenuItem/>
+    <MenuItem Text="Head" Id="AimedShot.Head" InputName="CastSpell" InputContext="ToxicShot"/>
+    <MenuItem Text="Body" Id="AimedShot.Body" InputName="CastSpell" InputContext="Wound"/>
+    <MenuItem Text="Hobble" Id="AimedShot.Hobble" InputName="CastSpell" InputContext="Kneecap"/>
+    <MenuItem Text="Body" Id="AimedShot.Body" InputName="CastSpell" InputContext="Wound"/>
+  </Menu>
+  <Menu Name="WarriorRightClickOnTarget">
+    <MenuItem/>
+    <MenuItem Text="Head" Id="AimedShot.Head" InputName="CastSpell" InputContext="Slash (Berserker)"/>
+    <MenuItem Text="Body" Id="AimedShot.Body" InputName="CastSpell" InputContext="Slash (Berserker)"/>
+    <MenuItem Text="Hobble" Id="AimedShot.Hobble" InputName="CastSpell" InputContext="Slash (Berserker)"/>
+    <MenuItem Text="Hands" Id="AimedShot.Hand">
+      <MenuItem Text="Cancel" CancelNode="1"/>
+      <MenuItem Text="Finger 1" Id="0"/>
+      <MenuItem Text="Finger 2" Id="0"/>
+      <MenuItem Text="Finger 3" Id="0"/>
+      <MenuItem Text="Finger 4" Id="0"/>
+      <MenuItem Text="Thumb 1" Id="0"/>
+      <MenuItem Text="Finger 6" Id="0"/>
+      <MenuItem Text="Finger 7" Id="0"/>
+      <MenuItem Text="Finger 8" Id="0"/>
+      <MenuItem Text="Finger 9" Id="0"/>
+      <MenuItem Text="Thumb 2" Id="0"/>
+    </MenuItem>
+  </Menu>
+</Menus>

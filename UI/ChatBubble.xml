@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<Sprites>
+    <Sprite Name="ChatBubble" Cycle="1">
+        <Frame Texture="UI\UI_ChatBubble.bmp" x0="0" x1="15" x2="21" x3="41" x4="50" x5="64" y0="0" y1="15" y2="20" y3="28" y4="36" y5="64" HotspotX="-858993460" HotspotY="-858993460" Duration="1.000" StartColor="white" EndColor="white" />
+    </Sprite>
+</Sprites>

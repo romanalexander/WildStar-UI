@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="SoundPicker" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="SoundPicker" position.height="543" position.relative="0" position.width="800" position.x="640" position.y="434" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="TitleFrame" visible="1">
+    <input-redirect source="SetSound_Info" target="info" targetname="SetText" />
+    <input-redirect source="SetSound_Name[]" target="Array" targetname="SetSound_Name" />
+    <input-redirect source="SetSound_PreviewUnchecked" target="play" targetname="UnsetChecked" />
+    <input-redirect source="SetSound_Rows" target="Array" targetname="SetRows" />
+    <control class="Array" child.cols="2147483647" child.form="UI\_OLD\Genesis\SoundTool\SoundPickerElement.form" child.height="0" child.rows="2147483647" child.width="0" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Array" position.height="480" position.relative="0" position.width="590" position.x="6" position.y="26" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="Array" visible="1">
+        <array-redirect source="OnSound_Select" target="SoundPicker" targetname="OnSound_Select[]" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="cancel" position.height="24" position.relative="0" position.width="64" position.x="658" position.y="512" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Cancel" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundPicker" targetname="OnCancel" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="okay" position.height="24" position.relative="0" position.width="64" position.x="728" position.y="510" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Okay" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundPicker" targetname="OnOkay" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="refresh" position.height="24" position.relative="0" position.width="64" position.x="688" position.y="29" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Refresh" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundPicker" targetname="OnRefresh" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="info" position.height="431" position.relative="0" position.width="177" position.x="611" position.y="59" Text="Sound Info Goes Here" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text" position.height="16" position.relative="0" position.width="61" position.x="9" position.y="515" Text="Keywords:" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="keywords" position.height="18" position.relative="0" position.width="508" position.x="74" position.y="514" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundPicker" targetname="OnKeyword_Change" />
+        <output-redirect source="OnEditBoxChange" target="SoundPicker" targetname="OnKeyword_Change" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text1" position.height="20" position.relative="0" position.width="783" position.x="4" position.y="1" Text="Sound Picker" TextID="0" TXDName="Text" visible="1" />
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play" position.height="24" position.relative="0" position.width="64" position.x="615" position.y="30" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Preview" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundPicker" targetname="OnPreviewStart" />
+        <output-redirect source="OnUncheck" target="SoundPicker" targetname="OnPreviewStop" />
+    </control>
+</frame>

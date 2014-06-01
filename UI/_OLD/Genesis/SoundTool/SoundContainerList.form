@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="SoundContainerList" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="SoundContainerList" position.height="543" position.relative="0" position.width="616" position.x="640" position.y="434" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="TitleFrame" visible="1">
+    <input-redirect source="SetContainer_Rows" target="Array" targetname="SetRows" />
+    <input-redirect source="SetContainer_Text[]" target="Array" targetname="SetContainerText" />
+    <control class="Array" child.cols="2147483647" child.form="UI\_OLD\Genesis\SoundTool\SoundContainerListElement.form" child.height="0" child.rows="2147483647" child.width="0" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Array" position.height="480" position.relative="0" position.width="590" position.x="6" position.y="26" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="Array" visible="1">
+        <array-redirect source="OnContainerDoubleClick" target="SoundContainerList" targetname="OnContainer_DoubleClick[]" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="refresh" position.height="24" position.relative="0" position.width="64" position.x="473" position.y="512" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Refresh" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerList" targetname="OnRefresh" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text" position.height="16" position.relative="0" position.width="61" position.x="9" position.y="515" Text="Keywords:" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="keywords" position.height="18" position.relative="0" position.width="386" position.x="74" position.y="514" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerList" targetname="OnKeyword_Change" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerList" targetname="OnKeyword_Change" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text1" position.height="20" position.relative="0" position.width="581" position.x="4" position.y="1" Text="Sound Containers" TextID="0" TXDName="Text" visible="1" />
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="quit" position.height="24" position.relative="0" position.width="64" position.x="540" position.y="511" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Quit" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerList" targetname="OnQuit" />
+    </control>
+</frame>

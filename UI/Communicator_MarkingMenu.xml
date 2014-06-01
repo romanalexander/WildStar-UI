@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<Menus>
+  <!-- forms go here -->
+  <!-- form -->
+  <Menu Name="Communicator">
+    <MenuItem/>
+    <MenuItem Text="Quest Log" Id="Communicator.QuestLog" InputName="QuestLog" InputContext=""/>
+    <MenuItem Text="Social" Id="Communicator.Social" InputName="" InputContext=""/>
+    <MenuItem Text="LFG" Id="Communicator.LFG" InputName="" InputContext=""/>
+    <MenuItem Text="Quest Givers" Id="Communicator.QuestGivers" InputName="" InputContext=""/>
+  </Menu>
+</Menus>

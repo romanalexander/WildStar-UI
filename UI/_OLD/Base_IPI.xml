@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<interfaces>
+  <!-- Base Controls that are directly UI objects -->
+  <!-- Frame -->
+  <ipi id="Frame" frame="Frame">
+  </ipi>
+  
+  <!-- SideBar -->
+  <ipi id="SideBar" frame="SideBar">
+  </ipi>
+
+  <!-- Complex Controls that are stored in .form files -->
+  <!--MessageBoxOkay -->
+  <ipi id="MessageBoxOkay" frame="Frame">
+    <input name="SetText" />
+    <input name="SetTextByID" />
+    <input name="SetTitle" />
+    <input name="SetTitleByID" />
+    <output name="OnOkay" />
+  </ipi>
+  <!--MessageBoxOkayCancel -->
+  <ipi id="MessageBoxOkayCancel" frame="Frame">
+    <input name="SetText" />
+    <input name="SetTextByID" />
+    <input name="SetTitle" />
+    <input name="SetTitleByID" />
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+  </ipi>  
+  <!-- MessageBoxYesNoCheckbox -->
+  <ipi id="MessageBoxYesNoCheckbox" frame="Frame">
+    <input name="SetText" />
+    <input name="SetTextByID" />
+    <input name="SetTitle" />
+    <input name="SetTitleByID" />
+    <input name="SetCheckText" />
+    <input name="SetCheckTextByID" />
+
+    <output name="OnYes" />
+    <output name="OnNo" />
+    <output name="OnCheck" />
+    <output name="OnUncheck" />
+  </ipi>
+  <!-- MessageBoxSlider -->
+  <ipi id="MessageBoxSlider" frame="Frame">
+    <input name="SetTitle" />
+    <input name="SetValue" />
+
+    <input name="SetSliderValue" />
+    <input name="SetSliderMin" />
+    <input name="SetSliderMax" />
+    <input name="SetSliderStepSize" />
+    
+    <output name="OnSliderChange" />
+    <output name="OnTextChange" />
+    
+    <output name="OnClose" />
+  </ipi>
+  <!-- MessageBoxColor -->
+  <ipi id="MessageBoxColorPicker" frame="Frame">
+    <input name="SetTitle" />
+    
+    <input name="SetRedColor" />
+    <input name="SetBlueColor" />
+    <input name="SetGreenColor" />
+    <input name="SetAlpha" />
+
+    <input name="SetRedColor_Text" />
+    <input name="SetBlueColor_Text" />
+    <input name="SetGreenColor_Text" />
+    <input name="SetAlphaColor_Text" />
+    
+    <output name="OnRedChange" />
+    <output name="OnBlueChange" />
+    <output name="OnGreenChange" />
+    <output name="OnAlphaChange" />
+    
+    <output name="OnClose"/>
+  </ipi>
+  <!-- MessageBoxStringOkayCancel -->
+  <ipi id="MessageBoxString" frame="Frame">
+    <input name="SetTitle" />
+    <input name="SetString" />
+
+    <output name="OnTextChange" />
+    <output name="OnOkay" />
+    <output name="OnCancel" />
+  </ipi>
+  <!-- Console -->
+  <ipi id="Console" frame="SideBar">
+    <input name="AddLine" />
+    <output name="OnCommand" />
+  </ipi>
+</interfaces>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="SoundPickerElement" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="SoundPickerElement" position.height="16" position.relative="0" position.width="580" position.x="0" position.y="0" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="PromptFrame" visible="1">
+    <input-redirect source="SetSound_Name" target="button" targetname="SetText" />
+    <control class="RadioButton" DisableUnselect="0" group="0" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="button" position.height="16" position.relative="0" position.width="580" position.x="0" position.y="0" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundPickerElement" targetname="OnSound_Select" />
+    </control>
+</frame>

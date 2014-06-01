@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<interfaces>
+  <ipi id="InventoryHUD" frame="Frame">
+    <input name="SetBagClosed" />
+    <output name="OnInventoryToggle" />
+  </ipi>
+  <ipi id="iconbar" frame="Frame">
+    <output name="OnIconbarPress_0" />
+    <output name="OnIconbarPress_1" />
+    <output name="OnIconbarPress_2" />
+    <output name="OnIconbarPress_3" />
+    <output name="OnIconbarPress_4" />
+    <output name="OnIconbarPress_5" />
+    <output name="OnIconbarPress_6" />
+    <output name="OnIconbarPress_7" />
+    <output name="OnIconbarPress_8" />
+    <output name="OnIconbarPress_9" />
+    <output name="OnIconbarPress_10" />
+    <output name="OnIconbarRelease_0" />
+    <output name="OnIconbarRelease_1" />
+    <output name="OnIconbarRelease_2" />
+    <output name="OnIconbarRelease_3" />
+    <output name="OnIconbarRelease_4" />
+    <output name="OnIconbarRelease_5" />
+    <output name="OnIconbarRelease_6" />
+    <output name="OnIconbarRelease_7" />
+    <output name="OnIconbarRelease_8" />
+    <output name="OnIconbarRelease_9" />
+    <output name="OnIconbarRelease_10" />
+
+	<input name="SetIconbarDisabled_0" />
+	<input name="SetIconbarDisabled_1" />
+	<input name="SetIconbarDisabled_2" />
+	<input name="SetIconbarDisabled_3" />
+	<input name="SetIconbarDisabled_4" />
+	<input name="SetIconbarDisabled_5" />
+	<input name="SetIconbarDisabled_6" />
+	<input name="SetIconbarDisabled_7" />
+	<input name="SetIconbarDisabled_8" />
+	<input name="SetIconbarDisabled_9" />
+	<input name="SetIconbarDisabled_10" />
+	<input name="SetIconbarEnabled_0" />
+	<input name="SetIconbarEnabled_1" />
+	<input name="SetIconbarEnabled_2" />
+	<input name="SetIconbarEnabled_3" />
+	<input name="SetIconbarEnabled_4" />
+	<input name="SetIconbarEnabled_5" />
+	<input name="SetIconbarEnabled_6" />
+	<input name="SetIconbarEnabled_7" />
+	<input name="SetIconbarEnabled_8" />
+	<input name="SetIconbarEnabled_9" />
+	<input name="SetIconbarEnabled_10" />
+  </ipi>
+  <ipi id="Inventory" frame="Frame">
+    <input name="SetEquipped_Boots" />
+    <input name="SetUnequipped_Boots" />
+    <output name="OnEquipToggle_Boots" />
+
+    <input name="SetEquipped_Belt" />
+    <input name="SetUnequipped_Belt" />
+    <output name="OnEquipToggle_Belt" />
+    
+    <input name="SetEquipped_Gloves" />
+    <input name="SetUnequipped_Gloves" />
+    <output name="OnEquipToggle_Gloves" />
+
+    <input name="SetEquipped_Pants" />
+    <input name="SetUnequipped_Pants" />
+    <output name="OnEquipToggle_Pants" />
+
+    <input name="SetEquipped_Chest" />
+    <input name="SetUnequipped_Chest" />
+    <output name="OnEquipToggle_Chest" />
+    
+    <input name="SetEquipped_Sword1" />
+    <input name="SetUnequipped_Sword1" />
+    <output name="OnEquipToggle_Sword1" />
+    
+    <input name="SetEquipped_Sword2" />
+    <input name="SetUnequipped_Sword2" />
+    <output name="OnEquipToggle_Sword2" />
+  </ipi>
+  <ipi id="chat" frame="Frame">
+    <input name="AddLine" />
+    <input name="ClearInput" />
+    <input name="OpenChat" />
+    
+    <output name="OnInput" />
+  </ipi>
+  <ipi id="Loading" frame="Frame">
+    <input name="SetLoadingText" />
+  </ipi>
+ 
+</interfaces>

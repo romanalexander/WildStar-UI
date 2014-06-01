@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<frame class="SideBar" ipi="InfoBar" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="InfoBar" position.height="28" position.relative="0" position.width="1600" position.x="0" position.y="1081" SideBarType="3" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="PromptFrame" visible="1" />

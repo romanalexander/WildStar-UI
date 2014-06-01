@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="SoundContainerEditor" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="SoundContainerEditor" position.height="459" position.relative="0" position.width="511" position.x="640" position.y="434" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="TitleFrame" visible="1">
+    <input-redirect source="SetDelay_DelayBeforeFirst_Set" target="delaybeforefirstsound" targetname="SetChecked" />
+    <input-redirect source="SetDelay_DelayBeforeFirst_Unset" target="delaybeforefirstsound" targetname="UnsetChecked" />
+    <input-redirect source="SetDelay_DelayN" target="delaynmillis" targetname="Activate" />
+    <input-redirect source="SetDelay_DelayN_Max_Count" target="delaynmillismaxcount" targetname="SetText" />
+    <input-redirect source="SetDelay_DelayN_Min_Count" target="delaynmillismincount" targetname="SetText" />
+    <input-redirect source="SetDelay_NoDelay" target="nodelay" targetname="Activate" />
+    <input-redirect source="SetDescription" target="description" targetname="SetText" />
+    <input-redirect source="SetID" target="id" targetname="SetText" />
+    <input-redirect source="SetLoop_LoopForever" target="loopforever" targetname="Activate" />
+    <input-redirect source="SetLoop_PlayNSounds" target="playn" targetname="Activate" />
+    <input-redirect source="SetLoop_PlayNSounds_Count" target="playnsoundscount" targetname="SetText" />
+    <input-redirect source="SetLoop_PlayOneSound" target="playone" targetname="Activate" />
+    <input-redirect source="SetPlayChance" target="playchance" targetname="SetText" />
+    <input-redirect source="SetPreview_Start" target="previewstop" targetname="SetChecked" />
+    <input-redirect source="SetPreview_Stop" target="previewstop" targetname="UnsetChecked" />
+    <input-redirect source="SetRandom" target="random" targetname="Activate" />
+    <input-redirect source="SetRandom_CompletelyRandom" target="completelyrandom" targetname="Activate" />
+    <input-redirect source="SetRandom_DoNotRepeatLastN" target="donotrepeatlastn" targetname="Activate" />
+    <input-redirect source="SetRandom_DoNotRepeatLastN_Count" target="dontrepeatlastncount" targetname="SetText" />
+    <input-redirect source="SetRandom_Shuffle" target="shuffle" targetname="Activate" />
+    <input-redirect source="SetSequence" target="sequence" targetname="Activate" />
+    <input-redirect source="SetSequence_End_LoopToTheStart" target="looptothestart" targetname="Activate" />
+    <input-redirect source="SetSequence_End_Reverse" target="reverse" targetname="Activate" />
+    <input-redirect source="SetSequence_End_Stop" target="stop" targetname="Activate" />
+    <input-redirect source="SetSequence_Start_RandomStart" target="randomstart" targetname="Activate" />
+    <input-redirect source="SetSequence_Start_StartAtBeginning" target="startatbeginning" targetname="Activate" />
+    <input-redirect source="SetSoundName_0" target="sound0" targetname="SetText" />
+    <input-redirect source="SetSoundName_1" target="sound1" targetname="SetText" />
+    <input-redirect source="SetSoundName_2" target="sound2" targetname="SetText" />
+    <input-redirect source="SetSoundName_3" target="sound3" targetname="SetText" />
+    <input-redirect source="SetSoundName_4" target="sound4" targetname="SetText" />
+    <input-redirect source="SetSoundName_5" target="sound5" targetname="SetText" />
+    <input-redirect source="SetStopSound_0" target="play0" targetname="UnsetChecked" />
+    <input-redirect source="SetStopSound_1" target="play1" targetname="UnsetChecked" />
+    <input-redirect source="SetStopSound_2" target="play2" targetname="UnsetChecked" />
+    <input-redirect source="SetStopSound_3" target="play3" targetname="UnsetChecked" />
+    <input-redirect source="SetStopSound_4" target="play4" targetname="UnsetChecked" />
+    <input-redirect source="SetStopSound_5" target="play5" targetname="UnsetChecked" />
+    <input-redirect source="SetVolume" target="volume" targetname="SetText" />
+    <control class="RadioButton" DisableUnselect="1" group="1" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="playone" position.height="18" position.relative="0" position.width="175" position.x="25" position.y="141" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Play One Sound" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnLoop_PlayOneSound" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="1" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="playn" position.height="18" position.relative="0" position.width="136" position.x="25" position.y="168" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Play N Sounds" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnLoop_PlayNSounds" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="1" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="loopforever" position.height="18" position.relative="0" position.width="175" position.x="25" position.y="198" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Loop Forever" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnLoop_LoopForever" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="2" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="nodelay" position.height="18" position.relative="0" position.width="175" position.x="318" position.y="142" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="No Delay Between Sounds" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnDelay_NoDelay" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="2" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delaynmillis" position.height="18" position.relative="0" position.width="94" position.x="318" position.y="171" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Delay N Millis" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnDelay_DelayN" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delaybeforefirstsound" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="197" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Delay Before First Sound" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnDelay_DelayBeforeFirst_Set" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnDelay_DelayBeforeFirst_Unset" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="3" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="random" position.height="18" position.relative="0" position.width="175" position.x="25" position.y="249" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Random" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnRandom" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="3" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sequence" position.height="18" position.relative="0" position.width="175" position.x="318" position.y="249" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Sequence" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="4" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="completelyrandom" position.height="18" position.relative="0" position.width="150" position.x="50" position.y="273" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Completely Random" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnRandom_CompletlyRandom" />
+        <output-connect source="OnCheck" target="sequence" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="startatbeginning" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="randomstart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="looptothestart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="reverse" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="stop" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="4" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="shuffle" position.height="18" position.relative="0" position.width="150" position.x="50" position.y="299" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Shuffle" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnRandom_Shuffle" />
+        <output-connect source="OnCheck" target="sequence" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="startatbeginning" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="randomstart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="looptothestart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="reverse" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="stop" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="4" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="donotrepeatlastn" position.height="18" position.relative="0" position.width="110" position.x="50" position.y="324" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Don&apos;t Repeat Last N" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnRandom_DoNotRepeatLastN" />
+        <output-connect source="OnCheck" target="sequence" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="startatbeginning" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="randomstart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="looptothestart" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="reverse" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="stop" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="5" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="startatbeginning" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="286" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Start At Beginning" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence_Start_StartAtBeginning" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="5" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="randomstart" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="308" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Random Start" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence_Start_RandomStart" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="6" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="looptothestart" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="348" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Loop To The Start" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence_End_LoopToTheStart" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="6" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="reverse" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="371" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Reverse" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence_End_Reverse" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="6" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="stop" position.height="18" position.relative="0" position.width="150" position.x="343" position.y="393" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Stop" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnSequence_End_Stop" />
+        <output-connect source="OnCheck" target="random" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="completelyrandom" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="shuffle" targetname="ForceUnchecked" />
+        <output-connect source="OnCheck" target="donotrepeatlastn" targetname="ForceUnchecked" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text" position.height="18" position.relative="0" position.width="422" position.x="6" position.y="3" Text="Sound Container Editor" TextID="0" TXDName="Text" visible="1" />
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound5" position.height="48" position.relative="0" position.width="56" position.x="421" position.y="59" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_5" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete5" position.height="16" position.relative="0" position.width="16" position.x="477" position.y="59" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_5" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play5" position.height="16" position.relative="0" position.width="16" position.x="477" position.y="75" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_5" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_5" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound3" position.height="48" position.relative="0" position.width="56" position.x="261" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_3" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete3" position.height="16" position.relative="0" position.width="16" position.x="317" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_3" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play3" position.height="16" position.relative="0" position.width="16" position.x="317" position.y="74" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_3" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_3" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound4" position.height="48" position.relative="0" position.width="56" position.x="340" position.y="59" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_4" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete4" position.height="16" position.relative="0" position.width="16" position.x="396" position.y="59" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_4" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play4" position.height="16" position.relative="0" position.width="16" position.x="396" position.y="75" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_4" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_4" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound2" position.height="48" position.relative="0" position.width="56" position.x="180" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_2" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete2" position.height="16" position.relative="0" position.width="16" position.x="236" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_2" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play2" position.height="16" position.relative="0" position.width="16" position.x="236" position.y="74" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_2" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_2" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound0" position.height="48" position.relative="0" position.width="56" position.x="20" position.y="57" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_0" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete0" position.height="16" position.relative="0" position.width="16" position.x="76" position.y="57" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_0" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play0" position.height="16" position.relative="0" position.width="16" position.x="76" position.y="73" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_0" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_0" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="sound1" position.height="48" position.relative="0" position.width="56" position.x="99" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSelectSound_1" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delete1" position.height="16" position.relative="0" position.width="16" position.x="155" position.y="58" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="CloseButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnDeleteSound_1" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="play1" position.height="16" position.relative="0" position.width="16" position.x="155" position.y="74" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="MaximizeButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundContainerEditor" targetname="OnPlaySound_1" />
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnStopSound_1" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Loop" position.height="17" position.relative="0" position.width="45" position.x="15" position.y="122" Text="Loop" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text1" position.height="18" position.relative="0" position.width="36" position.x="300" position.y="124" Text="Delay" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text2" position.height="18" position.relative="0" position.width="53" position.x="320" position.y="265" Text="Start" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text3" position.height="18" position.relative="0" position.width="42" position.x="321" position.y="328" Text="End" TextID="0" TXDName="Text" visible="1" />
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="close" position.height="18" position.relative="0" position.width="64" position.x="256" position.y="432" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Close" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnClose" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="save" position.height="18" position.relative="0" position.width="64" position.x="186" position.y="432" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Save" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnSave" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="id" position.height="20" position.relative="0" position.width="97" position.x="23" position.y="30" Text="ID: ###" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="description" position.height="18" position.relative="0" position.width="359" position.x="130" position.y="33" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnDescriptionChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnDescriptionChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="dontrepeatlastncount" position.height="18" position.relative="0" position.width="40" position.x="160" position.y="325" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnRandom_DoNotRepeatLastN_Count" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnRandom_DoNotRepeatLastN_Count" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="playnsoundscount" position.height="18" position.relative="0" position.width="40" position.x="161" position.y="168" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnLoop_PlayNSounds_CountChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnLoop_PlayNSounds_CountChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delaynmillismincount" position.height="18" position.relative="0" position.width="40" position.x="413" position.y="171" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnDelay_DelayN_Min_CountChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnDelay_DelayN_Min_CountChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="delaynmillismaxcount" position.height="18" position.relative="0" position.width="40" position.x="453" position.y="171" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnDelay_DelayN_Max_CountChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnDelay_DelayN_Max_CountChange" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="previewstop" position.height="18" position.relative="0" position.width="56" position.x="388" position.y="432" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Stop" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnUncheck" target="SoundContainerEditor" targetname="OnPreview_Stop" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text4" position.height="18" position.relative="0" position.width="79" position.x="17" position.y="375" Text="Play Chance:" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="playchance" position.height="18" position.relative="0" position.width="80" position.x="118" position.y="375" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnPlayChanceChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnPlayChanceChange" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit5" position.height="16" position.relative="0" position.width="16" position.x="477" position.y="91" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_5" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit0" position.height="16" position.relative="0" position.width="16" position.x="76" position.y="89" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_0" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit1" position.height="16" position.relative="0" position.width="16" position.x="155" position.y="90" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_1" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit2" position.height="16" position.relative="0" position.width="16" position.x="236" position.y="90" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_2" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit3" position.height="16" position.relative="0" position.width="16" position.x="317" position.y="90" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_3" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="edit4" position.height="16" position.relative="0" position.width="16" position.x="396" position.y="91" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="MinimizeButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnEditSound_4" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text5" position.height="18" position.relative="0" position.width="67" position.x="17" position.y="397" Text="Volume Scale:" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="volume" position.height="18" position.relative="0" position.width="80" position.x="118" position.y="397" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundContainerEditor" targetname="OnVolumeChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundContainerEditor" targetname="OnVolumeChange" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="previewstart" position.height="18" position.relative="0" position.width="56" position.x="325" position.y="432" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Preview" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundContainerEditor" targetname="OnPreview_Start" />
+    </control>
+</frame>

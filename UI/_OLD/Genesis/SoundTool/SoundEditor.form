@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="SoundEditor" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="SoundEditor" position.height="217" position.relative="0" position.width="600" position.x="640" position.y="434" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="TitleFrame" visible="1">
+    <input-redirect source="Looping_AddItem" target="looping" targetname="AddItem" />
+    <input-redirect source="Looping_Clear" target="looping" targetname="Clear" />
+    <input-redirect source="Looping_SelectItem" target="looping" targetname="SelectItem" />
+    <input-redirect source="SetAssetID_Name" target="assetid" targetname="SetText" />
+    <input-redirect source="SetAttenuation_Linear" target="attenuation_linear" targetname="SetChecked" />
+    <input-redirect source="SetAttenuation_Log" target="attenuation_log" targetname="SetChecked" />
+    <input-redirect source="SetDistanceMax" target="distancemax" targetname="SetText" />
+    <input-redirect source="SetDistanceMin" target="distancemin" targetname="SetText" />
+    <input-redirect source="SetEnumName" target="enumname" targetname="SetText" />
+    <input-redirect source="SetID" target="soundid" targetname="SetText" />
+    <input-redirect source="SetPitchMax" target="pitchmax" targetname="SetText" />
+    <input-redirect source="SetPitchMin" target="pitchmin" targetname="SetText" />
+    <input-redirect source="SetPreview_Stop" target="preview" targetname="UnsetChecked" />
+    <input-redirect source="SetVolumeMax" target="volumemax" targetname="SetText" />
+    <input-redirect source="SetVolumeMin" target="volumemin" targetname="SetText" />
+    <input-redirect source="Type_AddItem" target="type" targetname="AddItem" />
+    <input-redirect source="Type_Clear" target="type" targetname="Clear" />
+    <input-redirect source="Type_SelectItem" target="type" targetname="SelectItem" />
+    <input-redirect source="Usage_AddItem" target="usage" targetname="AddItem" />
+    <input-redirect source="Usage_Clear" target="usage" targetname="Clear" />
+    <input-redirect source="Usage_SelectItem" target="usage" targetname="SelectItem" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text5" position.height="18" position.relative="0" position.width="70" position.x="5" position.y="70" Text="AssetID:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="assetid" position.height="18" position.relative="0" position.width="504" position.x="89" position.y="70" Text="---unsetassetid---" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text" position.height="19" position.relative="0" position.width="314" position.x="2" position.y="2" Text="Sound Editor" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text1" position.height="18" position.relative="0" position.width="70" position.x="5" position.y="26" Text="Sound ID:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="soundid" position.height="18" position.relative="0" position.width="160" position.x="85" position.y="28" Text="---unset id---" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text2" position.height="18" position.relative="0" position.width="70" position.x="330" position.y="29" Text="EnumName:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="enumname" position.height="18" position.relative="0" position.width="160" position.x="430" position.y="29" Text="---unset enumname---" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text3" position.height="18" position.relative="0" position.width="70" position.x="5" position.y="47" Text="Type:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text4" position.height="18" position.relative="0" position.width="70" position.x="330" position.y="48" Text="Usage:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text6" position.height="18" position.relative="0" position.width="70" position.x="5" position.y="114" Text="Volume:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text7" position.height="18" position.relative="0" position.width="80" position.x="431" position.y="92" Text="Min" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text8" position.height="18" position.relative="0" position.width="80" position.x="510" position.y="92" Text="Max" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text7" position.height="18" position.relative="0" position.width="80" position.x="85" position.y="92" Text="Min" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text8" position.height="18" position.relative="0" position.width="80" position.x="165" position.y="92" Text="Max" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text9" position.height="18" position.relative="0" position.width="70" position.x="330" position.y="114" Text="Pitch:" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="volumemin" position.height="18" position.relative="0" position.width="80" position.x="85" position.y="114" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnVolumeMinChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnVolumeMinChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="volumemax" position.height="18" position.relative="0" position.width="80" position.x="165" position.y="114" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnVolumeMaxChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnVolumeMaxChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="pitchmin" position.height="18" position.relative="0" position.width="80" position.x="430" position.y="114" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnPitchMinChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnPitchMinChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="pitchmax" position.height="18" position.relative="0" position.width="80" position.x="510" position.y="114" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnPitchMaxChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnPitchMaxChange" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text10" position.height="18" position.relative="0" position.width="70" position.x="5" position.y="136" Text="Looping:" TextID="0" TXDName="Text" visible="1" />
+    <control class="TextListBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="looping" position.height="63" position.relative="0" position.width="160" position.x="85" position.y="136" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="ListBox" visible="1">
+        <output-redirect source="OnItemSelect" target="SoundEditor" targetname="OnLooping_SelectItem" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="save" position.height="18" position.relative="0" position.width="64" position.x="193" position.y="189" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Save" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundEditor" targetname="OnSave" />
+    </control>
+    <control class="Button" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="close" position.height="18" position.relative="0" position.width="64" position.x="264" position.y="189" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Close" TextID="0" TextOffset.x="0" TextOffset.y="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnPressed" target="SoundEditor" targetname="OnClose" />
+    </control>
+    <control class="CheckBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="preview" position.height="18" position.relative="0" position.width="64" position.x="337" position.y="189" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Preview" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" visible="1">
+        <output-redirect source="OnCheck" target="SoundEditor" targetname="OnPreview_Start" />
+        <output-redirect source="OnUncheck" target="SoundEditor" targetname="OnPreview_Stop" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text11" position.height="18" position.relative="0" position.width="70" position.x="330" position.y="136" Text="Distance" TextID="0" TXDName="Text" visible="1" />
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="distancemin" position.height="18" position.relative="0" position.width="80" position.x="430" position.y="136" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnDistanceMinChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnDistanceMinChange" />
+    </control>
+    <control class="EditBox" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="distancemax" position.height="18" position.relative="0" position.width="80" position.x="510" position.y="136" Text="" TextID="0" TXDName="EditBox" visible="1">
+        <output-redirect source="OnCharEntered" target="SoundEditor" targetname="OnDistanceMaxChange" />
+        <output-redirect source="OnEditBoxChange" target="SoundEditor" targetname="OnDistanceMaxChange" />
+    </control>
+    <control class="TextListBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="type" position.height="80" position.relative="0" position.width="160" position.x="85" position.y="47" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="ListBox" visible="1">
+        <output-redirect source="OnItemSelect" target="SoundEditor" targetname="OnType_SelectItem" />
+    </control>
+    <control class="TextListBox" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="usage" position.height="80" position.relative="0" position.width="160" position.x="430" position.y="48" transparent="0" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="ListBox" visible="1">
+        <output-redirect source="OnItemSelect" target="SoundEditor" targetname="OnUsage_SelectItem" />
+    </control>
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text12" position.height="18" position.relative="0" position.width="70" position.x="330" position.y="158" Text="Attenuation:" TextID="0" TXDName="Text" visible="1" />
+    <control class="RadioButton" DisableUnselect="1" group="0" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="attenuation_log" position.height="18" position.relative="0" position.width="80" position.x="430" position.y="158" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Log" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundEditor" targetname="OnSetAttenuation_Log" />
+    </control>
+    <control class="RadioButton" DisableUnselect="1" group="0" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="attenuation_linear" position.height="18" position.relative="0" position.width="80" position.x="510" position.y="158" PressedTextOffset.x="0" PressedTextOffset.y="0" Text="Linear" TextID="0" TextOffset.x="0" TextOffset.y="0" ToggleOffSoundID="0" ToggleOnSoundID="0" TXDName="StandardButton" UnselectAllSoundID="0" visible="1">
+        <output-redirect source="OnCheck" target="SoundEditor" targetname="OnSetAttenuation_Linear" />
+    </control>
+</frame>

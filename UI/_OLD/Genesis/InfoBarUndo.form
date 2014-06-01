@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<frame class="Frame" ipi="InfoBarUndo" MatchParentHeight="0" MatchParentWidth="0" moveable="1" Name="InfoBarUndo" position.height="28" position.relative="0" position.width="335" position.x="640" position.y="540" transparent="1" TXDFileName="UI\_OLD\256WindowTech.txd" TXDName="PromptFrame" visible="1">
+    <input-redirect source="SetMemUsage" target="memusage" targetname="SetText" />
+    <input-redirect source="SetUndoCount" target="undocount" targetname="SetText" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text" position.height="18" position.relative="0" position.width="125" position.x="105" position.y="4" Text="Undo Memory Usage:" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="memusage" position.height="18" position.relative="0" position.width="90" position.x="230" position.y="4" Text="GMMMKKKOOO" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="undocount" position.height="18" position.relative="0" position.width="60" position.x="45" position.y="4" Text="KKKOOO" TextID="0" TXDName="Text" visible="1" />
+    <control class="Text" font.color="3355443200" font.facename="Arial" font.shadow="0" font.shadowColor="3355443200" MatchParentHeight="0" MatchParentWidth="0" moveable="0" Name="Text1" position.height="18" position.relative="0" position.width="40" position.x="5" position.y="4" Text="Undo#" TextID="0" TXDName="Text" visible="1" />
+</frame>
